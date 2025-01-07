@@ -133,23 +133,23 @@
 
   # 系统程序
   programs = {
-
+    
     # Hyprland 桌面
     hyprland = {
       enable = true;
     };
-
-
+    
     # 配置 Bash
     bash = {
-      enableCompletion = true;        # Tab 补全功能
+      # Tab 补全功能
+      completion.enable = true;
       # 初始化交互式 shell 时应运行的额外命令
       # 加载 Bash 快捷键
-      shellInit = "bind -f '/home/0x0CFF/Syncthing/Company-LJKJ/Profiles/NixOS/Composers/Environment/Dotfiles/bash/bind'";
+      shellInit = "bind -f '/home/0x0CFF/Syncthing/Private/Profiles/NixOS/Composers/Environment/Dotfiles/bash/bind'";
 
       # 设置命令别名方便使用
       shellAliases = {
-        NAVI = "navi --path '/home/0x0CFF/Syncthing/Company-LJKJ/Profiles/NixOS/Composers/Environment/Dotfiles/navi'";
+        NAVI = "navi --path '/home/0x0CFF/Syncthing/Private/Profiles/NixOS/Composers/Environment/Dotfiles/navi'";
       };
     };
 

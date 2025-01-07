@@ -3,9 +3,9 @@
 使用 `nix shell` 临时命令拉取远程配置文件到本地
 
 ``` shell
-cd /mnt/etc/nixos
 nix shell nixpkgs#git
-git clone git@github.com:0x0CFF/NixOS-Configuration.git
+git clone https://github.com/0x0CFF/NixOS-Configuration.git
+sudo mv ./NixOS-Configuration/configuration.nix /mnt/etc/nixos
 ```
 
 执行系统构建命令
